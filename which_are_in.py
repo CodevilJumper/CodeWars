@@ -1,0 +1,16 @@
+def in_array(array1, array2):
+    """Given two arrays of strings a1 and a2 return a sorted array r in lexicographical order of the strings of a1 which are substrings of strings of a2."""
+    return_list = []
+
+    for word1 in array1:
+        for word2 in array2:
+            if word1 in word2:
+                if word1 not in return_list:
+                    return_list.append(word1)
+    return sorted(return_list)
+
+a1 = ["arp", "live", "strong"]
+
+a2 = ["lively", "alive", "harp", "sharp", "armstrong"]
+
+print(in_array(a1, a2))

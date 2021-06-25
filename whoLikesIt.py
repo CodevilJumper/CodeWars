@@ -20,7 +20,14 @@ Created on Thu Feb 18 17:21:26 2021
 
 
 def likes(names):
-    """"""
+    """
+
+    Args:
+        names (): list of names in a list
+
+    Returns:
+        String based on names in a list with comment "like this"
+    """
     if len(names) == 0:
         return "no one likes this"
     elif len(names) == 1:
